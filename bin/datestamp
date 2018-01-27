@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+
+ARGV.each do |filename|
+  source = Pathname.new(filename)
+  unless source.directory?
+    birthtime = source.birthtime
+    datestamp = birthtime.strftime('%Y-%m-%d')
+    directory, basename = source.split
+    target = Pathname.new(directory).join("#{datestamp} #{basename}")
+    source.rename(target)
+  end
+end
