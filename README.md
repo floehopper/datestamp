@@ -38,5 +38,11 @@ The Ruby script currently depends on Ruby v2.5.0 provided by [`rbenv`][1], becau
 
 The whole project has only been tested on Mac OSX Sierra (v10.12.6).
 
+### License
+
+You may use, copy and redistribute this library under the MIT license.
+
+© Copyright James Mead 2018
+
 [1]: https://github.com/rbenv/rbenv
 [2]: https://ruby-doc.org/stdlib-2.5.0/libdoc/pathname/rdoc/Pathname.html#method-i-birthtime
